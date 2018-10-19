@@ -1,6 +1,7 @@
 %% -*- Mode: Prolog -*-
 
-ishead(X, [X | _]).
+is_head(X, [X | _]).
+
 nth(X, 0, [X | _]).
 nth(X, N, [_ | T]) :- N1 is N-1, nth(X, N1, T).
 
@@ -17,11 +18,18 @@ sorted([X, Y | T]) :- X =< Y, sorted([Y | T]).
 last([X], X).
 last([_ | T], Y) :- last(T, Y).
 
+remove_all([], [], _).
+remove_all(L, [X | T], X) :- remove_all(T, L, X).
+remove_all([X | T1], [X | T2], E) :- E \= X, remove_all(T1, T2, E).
 
+list_sum([], [], []).
+list_sum([Z | T1], [X | T2], [Y | T3]) :- Z is X + Y, list_sum(T1, T2, T3).
 
+tail([_ | T], T).
 
-
-
+duplicate([], []).
+duplicate([_, _], [_]).
+duplicate([X | T], []) :- duplicate([X, Y]).
 
 
 
