@@ -22,8 +22,9 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
   ### Books
   - [Prolog Programming for Artificial Intelligence - Ivan Bratko]()
   - [The Art of Prolog - Leon Sterling]()
-  - [Prolog - Wikibook](https://en.wikibooks.org/wiki/Prolog)
+  - **[Prolog - Wikibook](https://en.wikibooks.org/wiki/Prolog)**
   - [Learn Prolog Now](http://www.learnprolognow.org/lpnpage.php?pageid=online)
+  - **[Power of Prolog](https://www.metalevel.at/prolog)**
   ### Other
   - [SLD Resolution:](https://en.wikipedia.org/wiki/SLD_resolution) How does Prolog resolve queries? *Selective Linear Definite* clause resolution!
   - [Tail Call Optimization (TCO):](https://en.wikipedia.org/wiki/Tail_call) How does Prolog optimize recursive rules? Unrolling the rule into a loop whenever
