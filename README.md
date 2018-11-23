@@ -15,7 +15,7 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
   X = 'Hello World!'.
   ```
 
-  ### References
+### References
   - [The Prolog Dictionary:](http://www.cse.unsw.edu.au/~billw/prologdict.html) A comprehensive reference for SWI-Prolog (ISO & Edinburgh).
   - [The Prolog Wikibook:](https://en.wikibooks.org/wiki/Prolog) An essential and quick reference/primer for anyone delving into Prolog for the first time.
   - [Prolog Syntax and Semantics](https://en.wikipedia.org/wiki/Prolog_syntax_and_semantics)
@@ -29,3 +29,8 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
   - [SLD Resolution:](https://en.wikipedia.org/wiki/SLD_resolution) How does Prolog resolve queries? *Selective Linear Definite* clause resolution!
   - [Tail Call Optimization (TCO):](https://en.wikipedia.org/wiki/Tail_call) How does Prolog optimize recursive rules? Unrolling the rule into a loop whenever
   - [Efficiency of Prolog](https://www.metalevel.at/prolog/efficiency)
+
+## Lisp
+  ```lisp
+  (defun hello-world () (print (list 'Hello 'World!)))
+  ```
