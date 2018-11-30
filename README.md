@@ -34,3 +34,6 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
   ```lisp
   (defun hello-world () (print (list 'Hello 'World!)))
   ```
+  
+   ### Books
+   - [Practical Common Lisp](http://www.gigamonkeys.com/book/)
