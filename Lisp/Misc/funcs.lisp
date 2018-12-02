@@ -1,3 +1,5 @@
-;;;; Random Lisp functions
-(defun double (x) (* 2 x))
+;;;; funcs.lisp
 
+(defun double_x (x) (* 2 x))
+
+(double_x 2)

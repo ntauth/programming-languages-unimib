@@ -15,7 +15,7 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
   X = 'Hello World!'.
   ```
 
-### References
+  ### References
   - [The Prolog Dictionary:](http://www.cse.unsw.edu.au/~billw/prologdict.html) A comprehensive reference for SWI-Prolog (ISO & Edinburgh).
   - [The Prolog Wikibook:](https://en.wikibooks.org/wiki/Prolog) An essential and quick reference/primer for anyone delving into Prolog for the first time.
   - [Prolog Syntax and Semantics](https://en.wikipedia.org/wiki/Prolog_syntax_and_semantics)
@@ -32,8 +32,10 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
 
 ## Lisp
   ```lisp
-  (defun hello-world () (print (list 'Hello 'World!)))
+  (defun hello-world () (format t "Hello World!"))
   ```
   
    ### Books
    - [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+   ### Other
+   - [Lisp Syntax & Semantics](https://en.wikipedia.org/wiki/Lisp_(programming_language)#Syntax_and_semantics)
