@@ -45,6 +45,7 @@
 
 (defun filter (lst pred)
   (cond ((null lst) nil)
-        ((= (funcall pred lst) t) (cons (first lst)
+        (((null (funcall pred lst)) nil) (cons (first lst)
                                         (filter (rest lst) pred)))
-        ((= (funcall pred lst) nil) (filter (rest lst) pred))))
+        (((null (funcall pred lst)) t) (filter (rest lst) pred))))
+ 
