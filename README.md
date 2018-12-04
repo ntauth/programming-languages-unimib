@@ -37,5 +37,8 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
   
    ### Books
    - [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+   - [The Common Lisp Cookbook](https://lispcookbook.github.io/cl-cookbook/)
+   - [Common Lisp Wikibook](https://en.wikibooks.org/wiki/Common_Lisp)
+   
    ### Other
    - [Lisp Syntax & Semantics](https://en.wikipedia.org/wiki/Lisp_(programming_language)#Syntax_and_semantics)
