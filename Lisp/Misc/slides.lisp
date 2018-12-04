@@ -62,6 +62,48 @@
       (cons (funcall transform (car lst))
 	    (mapcar* transform (rest lst)))))
 
-;;; @todo bind
-(defun bind (fn &rest args) nil)
-  
+;;; fn generator (closure binder)
+(defun adder-fn-gen (x)
+  (lambda (y) (+ x y)))
+
+(defvar adder-fn-42 (adder-fn-gen 42))
+
+;;; let
+(defun foo-let (x y)
+  (let ((a (* x x))
+	(b (+ 1 (* y y))))
+    (+ a b)))
+    
+;;; compose
+(defun compose-apply (f g &rest args)
+  (let ((val-f (apply f args)))
+    (funcall g val-f)))
+
+(defun compose (f g)
+  (lambda (&rest args)
+    (funcall g (apply f args))))
+
+;;; filter
+(defun filter (predicate lst)
+  (cond ((null lst) nil)
+	((funcall predicate (first lst))
+	 (cons (first lst) (filter predicate (rest lst))))
+	(T (filter predicate (rest lst)))))
+
+;;; accumulate
+(defun accumulate (transform default lst)
+  (if (null lst)
+      default
+      (funcall transform (first lst)
+	       (accumulate transform default (rest lst)))))
+;;; iota
+(defun iota (n)
+  (if (<= n 0)
+      nil
+      (cons n (iota (- n 1)))))
+
+;;; optionals & default
+(defun fact-tro (n &optional (acc 1))
+  (if (= n 0)
+      acc
+      (fact-tro (- n 1) (* n acc))))
