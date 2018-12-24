@@ -42,3 +42,10 @@ The repository is structured in laboratories (**LAB-[Timestamp]** format), proje
    
    ### Other
    - [Lisp Syntax & Semantics](https://en.wikipedia.org/wiki/Lisp_(programming_language)#Syntax_and_semantics)
+
+## Haskell
+  ```haskell
+  
+  ```
+  ### Books
+  - [Haskell Wikibook](https://en.wikibooks.org/wiki/Haskell)
